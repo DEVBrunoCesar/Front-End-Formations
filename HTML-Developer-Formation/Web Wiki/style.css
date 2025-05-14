@@ -1,0 +1,341 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Resetando estilos */
+ul { 
+    list-style: none; 
+    padding-left: 5px; 
+}
+
+a { 
+    color: #6a5acd; 
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #9370db;
+    text-decoration: underline;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4b0082;
+    padding: 1rem;
+    color: white;
+}
+
+.header-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    padding: 10px;
+}
+
+.main-nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.main-nav a {
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.main-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+/* Barra separadora */
+.bar {
+    background-color: #f9f9fb;
+    padding: 15px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+}
+
+/* Conteúdo principal */
+.content {
+    max-width: 1440px;
+    margin: auto;
+    grid-gap: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+    padding: 2rem 1rem;
+}
+
+/* Artigo principal */
+.main {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.main h1 {
+    color: #4b0082;
+    border-bottom: 2px solid #e6e6fa;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.main h2 {
+    color: #6a5acd;
+    margin-top: 2rem;
+}
+
+.main h3 {
+    color: #9370db;
+}
+
+/* Imagens e figuras */
+figure {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+figcaption {
+    color: #666;
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Gêneros de anime */
+.genres-container {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 0;
+}
+
+.genre-card {
+    flex: 1;
+    min-width: 200px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.genre-card:hover {
+    transform: translateY(-5px);
+}
+
+.genre-card h3 {
+    padding: 0.5rem 1rem;
+    margin: 0;
+    background-color: #e6e6fa;
+}
+
+.genre-card p {
+    padding: 0.5rem 1rem 1rem;
+    margin: 0;
+}
+
+.genre-list {
+    padding-left: 1.5rem;
+    list-style-type: disc;
+}
+
+/* Lista de animes recomendados */
+.top-anime-list {
+    padding-left: 0;
+}
+
+.top-anime-list li {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.top-anime-list h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.top-anime-list p {
+    margin: 0;
+}
+
+/* Vídeo */
+.video-container {
+    margin: 2rem 0;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* Novos lançamentos */
+.releases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.release-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.release-card:hover {
+    transform: translateY(-5px);
+}
+
+.release-card h3 {
+    padding: 0.5rem 1rem;
+    margin: 0;
+    background-color: #e6e6fa;
+}
+
+.release-card p {
+    padding: 0.5rem 1rem;
+    margin: 0;
+}
+
+.release-card time {
+    display: block;
+    padding: 0 1rem 1rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Barra lateral e âncoras */
+.sidebar, .anchors {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    align-self: start;
+}
+
+.sidebar {
+    border-right: solid 1px #cdcdcd;
+}
+
+.sidebar h2, .anchors h2 {
+    color: #4b0082;
+    border-bottom: 2px solid #e6e6fa;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.anchors {
+    border-left: solid 1px #cdcdcd;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #4b0082;
+    color: white;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+.footer-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.footer-section h3 {
+    color: #e6e6fa;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer a {
+    color: #e6e6fa;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.copyright {
+    max-width: 1440px;
+    margin: 2rem auto 0;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .content {
+        grid-template-areas: 
+            "sidebar main"
+            "anchors anchors";
+        grid-template-columns: minmax(0, 15rem) minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .content {
+        grid-template-areas: 
+            "main"
+            "sidebar"
+            "anchors";
+        grid-template-columns: 1fr;
+    }
+    
+    .genres-container {
+        flex-direction: column;
+    }
+    
+    .top-anime-list li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .top-anime-list img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
