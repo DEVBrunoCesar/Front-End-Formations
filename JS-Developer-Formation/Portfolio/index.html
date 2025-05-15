@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!--
+        Normalize && CSS
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/acordeon.css">
+    <link rel="stylesheet" href="./assets/css/languages.css">
+    <link rel="stylesheet" href="./assets/css/portfolio.css">
+    <link rel="stylesheet" href="./assets/css/skills.css">
+
+    <!--
+        Flaticon
+    -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+    
+
+</head>
+<body>
+    
+    <main class="main">
+
+        <header class="header">
+            <img src="./assets/img/image.png" alt="Foto de Perfil do Bruno Cesar" class="photo" id="profile.photo">
+    
+            <h1 class="title">Olá, meu nome é <span id="profile.name">Carregando...</span></h1>
+        
+            <div class="information">
+                <p><i class="fi fi-sr-user"></i><span id="profile.job">Carregando...</span></p></i> 
+                <p><i class="fi fi-sr-marker"></i><span id="profile.location">Carregando...</span></p></i>
+                <p><i class="fi fi-sr-phone-call"></i><span id="profile.phone">Carregando...</span></p></i>
+                <p><i class="fi fi-sr-envelope"></i><span id="profile.email">Carregando...</span></p></i>
+            </div>       
+        </header>
+
+        <section class="acordeon">
+
+            <button class="trigger" type="button">Habilidades <i class="fi fi-sr-angle-small-up"></i></button>
+
+            <div class="content">
+                <div class="skills">
+
+                    <section class="tools" id="profile.skills.hardSkills">
+                        <h3>Ferramentas:</h3>
+                        <ul>
+                            <li><img src="./assets/img/html.svg" alt="Habilidade em HTML"></li>
+                            <li><img src="./assets/img/css.svg" alt="Habilidade em CSS"></li>
+                            <li><img src="./assets/img/js.svg" alt="Habilidade em JavaScript"></li>
+                            <li><img src="./assets/img/git.svg" alt="Habilidade em Git"></li>
+                            <li><img src="./assets/img/react.svg" alt="Habilidade em React"></li>
+                            <li><img src="./assets/img/angular.svg" alt="Habilidade em Angular"></li>
+                            <li><img src="./assets/img/net.svg" alt="Habilidade em .NET"></li>
+                            <li><img src="./assets/img/aws.svg" alt="Habilidade em AWS Cloud"></li>
+                        </ul>
+                    </section>
+
+                    <section class="personal">
+                        <h3>Pessoal:</h3>
+                        <ul id="profile.skills.softSkills">
+                            <li>Carregando...</li>
+                            <li>Carregando...</li>
+                            <li>Carregando...</li>
+                            <li>Carregando...</li>
+                            <li>Carregando...</li>
+                        </ul>
+                    </section>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="acordeon">
+
+            <button class="trigger" type="button">Idiomas <i class="fi fi-sr-angle-small-up"></i></button>
+
+            <div class="content">
+                <ul class="languages">
+                    <li><i class="fi fi-sr-check"></i>Portuguese (BR)</li>
+                    <li><i class="fi fi-sr-check"></i>English</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="acordeon">
+
+            <button class="trigger" type="button">Portfólio <i class="fi fi-sr-angle-small-up"></i></button>
+
+            <div class="content">
+                <ul class="portfolio">
+                    <li>
+                        <span class="title"><i class="fi fi-brands-github"></i>Criando uma Pokedéx</span>
+                        <a href="https://github.com/DEVBrunoCesar/Front-End-Formations/tree/main/JS-Developer-Formation/Pokedex-Project">https://github.com/DEVBrunoCesar/Front-End-Formations/tree/main/JS-Developer-Formation/Pokedex-Project</a>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="acordeon">
+
+            <button class="trigger" type="button">Experiências Profissional<i class="fi fi-sr-angle-small-up"></i></button>
+
+            <div class="content">
+
+            </div>
+
+        </section>
+
+    </main>
+    
+    <script src="./assets/js/acordeon.js"></script>
+    <script src="./assets/js/api.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
